@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/rule_of_zero.dir/examples/05_rule_of_zero.cpp.o -o rule_of_zero
