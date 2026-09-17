@@ -19,6 +19,7 @@ The examples use low-level language features to make their behavior visible, the
 | Module | Topics | Status |
 | --- | --- | --- |
 | [Day 1: Memory fundamentals](day-01-memory-fundamentals/) | Stack and heap, pointers, references, lifetime, allocation, copying, alignment, and contiguous memory | Complete |
+| [Day 2: RAII and modern C++](day-02-raii-modern-cpp/) | Special member functions, Rule of 3/5/0, RAII, and smart-pointer ownership | Complete |
 
 ## Quick start
 
@@ -43,18 +44,24 @@ Run an individual example:
 ./build/layout
 ```
 
-See the [Day 1 study guide](day-01-memory-fundamentals/README.md) for the complete executable list, memory-diagram worksheet, sanitizer lab, and reading references.
+See the [Day 1 study guide](day-01-memory-fundamentals/README.md) for memory fundamentals and the [Day 2 study guide](day-02-raii-modern-cpp/README.md) for RAII, special member functions, and ownership.
 
 ## Repository structure
 
 ```text
 cpp-fundamentals/
 ├── README.md
-└── day-01-memory-fundamentals/
+├── day-01-memory-fundamentals/
+│   ├── examples/
+│   ├── exercises/
+│   ├── answers/
+│   ├── unsafe/
+│   ├── CMakeLists.txt
+│   └── README.md
+└── day-02-raii-modern-cpp/
     ├── examples/       # Runnable, defined-behavior demonstrations
-    ├── exercises/      # Memory-diagram prompts
-    ├── answers/        # Exercise explanations
-    ├── unsafe/         # Optional sanitizer-only defect examples
+    ├── exercises/      # Interview prompts
+    ├── answers/        # Worked explanations
     ├── CMakeLists.txt
     └── README.md       # Detailed lesson and reference guide
 ```
