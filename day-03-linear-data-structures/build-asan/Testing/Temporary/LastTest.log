@@ -1,0 +1,33 @@
+Start testing: Sep 17 15:24 PDT
+----------------------------------------------------------
+1/2 Testing: singly_linked_list_test
+1/2 Test: singly_linked_list_test
+Command: "/Users/lakshyajagadish/Documents/Coding/cpp-fundamentals/day-03-linear-data-structures/build-asan/singly_linked_list_test"
+Directory: /Users/lakshyajagadish/Documents/Coding/cpp-fundamentals/day-03-linear-data-structures/build-asan
+"singly_linked_list_test" start time: Sep 17 15:24 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"singly_linked_list_test" end time: Sep 17 15:24 PDT
+"singly_linked_list_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: data_structures_test
+2/2 Test: data_structures_test
+Command: "/Users/lakshyajagadish/Documents/Coding/cpp-fundamentals/day-03-linear-data-structures/build-asan/data_structures_test"
+Directory: /Users/lakshyajagadish/Documents/Coding/cpp-fundamentals/day-03-linear-data-structures/build-asan
+"data_structures_test" start time: Sep 17 15:24 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"data_structures_test" end time: Sep 17 15:24 PDT
+"data_structures_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 17 15:24 PDT

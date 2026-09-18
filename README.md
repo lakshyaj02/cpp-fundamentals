@@ -20,6 +20,7 @@ The examples use low-level language features to make their behavior visible, the
 | --- | --- | --- |
 | [Day 1: Memory fundamentals](day-01-memory-fundamentals/) | Stack and heap, pointers, references, lifetime, allocation, copying, alignment, and contiguous memory | Complete |
 | [Day 2: RAII and modern C++](day-02-raii-modern-cpp/) | Special member functions, Rule of 3/5/0, RAII, and smart-pointer ownership | Complete |
+| [Day 3: Linear data structures](day-03-linear-data-structures/) | Arrays, singly and doubly linked lists, stacks, queues, and complexity analysis | Complete |
 
 ## Quick start
 
@@ -58,12 +59,20 @@ cpp-fundamentals/
 │   ├── unsafe/
 │   ├── CMakeLists.txt
 │   └── README.md
-└── day-02-raii-modern-cpp/
+├── day-02-raii-modern-cpp/
     ├── examples/       # Runnable, defined-behavior demonstrations
     ├── exercises/      # Interview prompts
     ├── answers/        # Worked explanations
     ├── CMakeLists.txt
     └── README.md       # Detailed lesson and reference guide
+└── day-03-linear-data-structures/
+    ├── include/        # Container-free template implementations
+    ├── examples/       # Runnable demonstrations
+    ├── tests/          # Invariant and edge-case checks
+    ├── exercises/      # Complexity drills
+    ├── answers/        # Worked explanations
+    ├── CMakeLists.txt
+    └── README.md
 ```
 
 ## Safety note
