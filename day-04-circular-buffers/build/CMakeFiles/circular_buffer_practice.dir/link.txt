@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/circular_buffer_practice.dir/examples/circular_buffer_practice.cpp.o -o circular_buffer_practice
