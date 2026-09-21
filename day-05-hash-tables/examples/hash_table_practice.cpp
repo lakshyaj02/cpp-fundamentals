@@ -31,5 +31,8 @@ int main() {
     assert(*open.find(9) == "nine");
     assert(open.erase(1));
     assert(open.contains(9)); // Lookup must continue past the tombstone.
+    assert(!open.insert_or_assign(9, "updated nine"));
+    assert(*open.find(9) == "updated nine");
+    assert(open.size() == 1);
     assert(open.insert_or_assign(17, "seventeen"));
 }

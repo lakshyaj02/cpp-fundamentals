@@ -23,19 +23,39 @@ public:
         if (load_factor() > max_load_factor_) {
             rehash(slots_.size() * 2);
         }
+        std::optional<std::size_t> first_tombstone;
         for (std::size_t attempt = 0; attempt < slots_.size(); ++attempt) {
             std::size_t index = probe_index(key, attempt, slots_.size());
             auto& slot = slots_[index];
-            if (slot.state == SlotState::empty || slot.state == SlotState::tombstone) {
-                slot.entry = std::make_optional(std::make_pair(key, value));
-                slot.state = SlotState::occupied;
+            if (slot.state == SlotState::tombstone) {
+                if (!first_tombstone) {
+                    first_tombstone = index;
+                }
+                continue;
+            }
+            if (slot.state == SlotState::empty) {
+                auto& destination = first_tombstone ? slots_[*first_tombstone] : slot;
+                destination.entry = std::make_pair(key, value);
+                destination.state = SlotState::occupied;
                 ++size_;
+                if (first_tombstone) {
+                    --tombstones_;
+                }
                 return true;
             }
-            if (slot.state == SlotState::occupied && slot.entry->first == key) {
+            if (slot.entry->first == key) {
                 slot.entry->second = value;
-                return true;
+                return false;
             }
+        }
+
+        if (first_tombstone) {
+            auto& destination = slots_[*first_tombstone];
+            destination.entry = std::make_pair(key, value);
+            destination.state = SlotState::occupied;
+            ++size_;
+            --tombstones_;
+            return true;
         }
         return false;
     }
