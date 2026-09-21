@@ -21,6 +21,8 @@ The examples use low-level language features to make their behavior visible, the
 | [Day 1: Memory fundamentals](day-01-memory-fundamentals/) | Stack and heap, pointers, references, lifetime, allocation, copying, alignment, and contiguous memory | Complete |
 | [Day 2: RAII and modern C++](day-02-raii-modern-cpp/) | Special member functions, Rule of 3/5/0, RAII, and smart-pointer ownership | Complete |
 | [Day 3: Linear data structures](day-03-linear-data-structures/) | Arrays, singly and doubly linked lists, stacks, queues, and complexity analysis | Complete |
+| [Day 4: Circular buffers](day-04-circular-buffers/) | Fixed-capacity queues, head/tail indices, fullness, and wraparound | Practice |
+| [Day 5: Hash tables](day-05-hash-tables/) | Chaining, probing, tombstones, load factor, resizing, and rehashing | Practice |
 
 ## Quick start
 
