@@ -23,6 +23,7 @@ The examples use low-level language features to make their behavior visible, the
 | [Day 3: Linear data structures](day-03-linear-data-structures/) | Arrays, singly and doubly linked lists, stacks, queues, and complexity analysis | Complete |
 | [Day 4: Circular buffers](day-04-circular-buffers/) | Fixed-capacity queues, head/tail indices, fullness, and wraparound | Practice |
 | [Day 5: Hash tables](day-05-hash-tables/) | Chaining, probing, tombstones, load factor, resizing, and rehashing | Practice |
+| [Day 6: Data structure mock interview](day-06-data-structure-mock/) | LRU cache design, implementation, testing, ownership, and follow-up system design | Practice |
 
 ## Quick start
 

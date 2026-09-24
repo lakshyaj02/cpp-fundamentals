@@ -26,3 +26,8 @@ Resizing is occasional, so insertion remains $O(1)$ amortized under a suitable h
 ## Completion check
 
 You are done when you can draw collision chains and probe sequences, explain why tombstones preserve lookup, distinguish capacity from size, and rehash every live entry after resizing.
+
+## Notes
+With chaining, high load factor creates longer linked lists and slower searches. With open addressing, it causes longer probe sequences and clustering; performance deteriorates sharply as the table approaches full capacity.
+
+Quadratic probing may fail to visit every slot. Common designs use a prime capacity and restrict load factor, often below 0.5, to guarantee finding an available slot. The exact requirements depend on the probing formula.
